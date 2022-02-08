@@ -1,12 +1,14 @@
 
+
+
 a = "472"
 b = "385"
 a = int(a)
 b = list(b)
 whole = 0
-for each_b in b:
+for i, each_b in reversed(list(enumerate(b))):
     each_value = a * int(each_b)
     print(each_value)
-    whole += each_value
+    whole += each_value * (10 ** i)
 
 print(whole)
