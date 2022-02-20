@@ -16,5 +16,5 @@ for coin_type in coin_types:
   quotient = (target // coin_type)
   target -= (quotient * coin_type)
   count += quotient
-  
+   
 print(count)
